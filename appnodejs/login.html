@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .login-container {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      max-width: 400px;
+      width: 100%;
+    }
+
+    .login-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .login-container img {
+      display: block;
+      margin: 0 auto 20px auto;
+      border-radius: 50%;
+    }
+
+    .login-container label {
+      font-weight: bold;
+      margin-bottom: 5px;
+      display: block;
+    }
+
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0 20px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    .login-container input[type="checkbox"] {
+      margin-right: 10px;
+    }
+
+    .login-container button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .login-container button:hover {
+      background-color: #45a049;
+    }
+
+    .login-container .cancel-btn {
+      background-color: #f44336;
+      margin-top: 10px;
+    }
+
+    .login-container .cancel-btn:hover {
+      background-color: #e41e1e;
+    }
+
+    .login-container a {
+      color: #007bff;
+      text-decoration: none;
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .login-container a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login Form</h2>
+    <img src="https://via.placeholder.com/100" alt="User Avatar" width="100">
+    <form action="/login" method="POST">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" placeholder="admin@example.com" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="********" required>
+
+      <input type="checkbox" id="remember" name="remember">
+      <label for="remember">Remember me</label>
+
+      <button type="submit">Login</button>
+      <button type="reset" class="cancel-btn">Cancel</button>
+
+      <a href="#">Forgot password?</a>
+    </form>
+  </div>
+</body>
+</html>
